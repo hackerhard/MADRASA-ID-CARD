@@ -1,0 +1,51 @@
+/* Basic reset */
+*{box-sizing:border-box}
+body{font-family: 'Segoe UI', Roboto, Arial, sans-serif; background:#f3f7fb; margin:0; color:#14313a}
+.container{max-width:1100px;margin:28px auto;padding:18px}
+header{text-align:center;margin-bottom:18px}
+h1{font-size:28px;margin:6px 0}
+.muted{color:#5b6b71}
+main{display:grid;grid-template-columns:1fr 420px;gap:20px}
+.form-area{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,32,0.06)}
+.form-area h2{margin-top:0;color:#144049}
+label{display:block;margin:10px 0;font-size:14px}
+input[type=text], input[type=date], select, textarea{width:100%;padding:10px;border:1px solid #d8e2e6;border-radius:6px;font-size:14px}
+textarea{min-height:70px;resize:vertical}
+.buttons{display:flex;gap:8px;margin-top:12px}
+button{padding:10px 12px;border:none;border-radius:8px;background:#0b6b5f;color:#fff;cursor:pointer}
+button#updateBtn{background:#0b6b5f}
+button#downloadBtn{background:#1565d8}
+button#printBtn{background:#2e7d32}
+
+/* Preview area */
+.preview-area{padding:18px}
+#cardWrapper{display:flex;justify-content:center;padding-top:10px}
+.id-card{width:320px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid #e6eef0;box-shadow:0 6px 20px rgba(12,21,26,0.08);position:relative;font-family: 'Montserrat', Arial, sans-serif}
+
+/* Top bar */
+.topbar{height:70px;background:linear-gradient(90deg,#0f7e72,#2aa093);color:#fff;padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.topbar .logo{font-weight:700;font-size:14px}
+
+/* body */
+.card-body{display:flex;padding:18px;background:#fafafa;gap:12px}
+.photo-frame{width:96px;height:110px;border:6px solid #e9f7f4;border-radius:6px;display:flex;align-items:center;justify-content:center;background:#fff}
+.photo-frame img{width:84px;height:94px;object-fit:cover;border-radius:2px}
+.info{flex:1}
+.idno{font-size:12px;color:#0b6b5f}
+.name{font-size:18px;color:#0b4b47;font-weight:700;margin-top:6px}
+.meta{margin-top:8px;color:#274747;font-size:13px}
+
+/* details */
+.details{padding:12px}
+.row{padding:10px 0;border-top:1px solid #e6f0ef}
+.two-col{display:flex;justify-content:space-between;gap:8px}
+.details strong{color:#0b6b5f}
+.footer{background:linear-gradient(90deg,#0f7e72,#2aa093);color:#fff;padding:12px;text-align:left;margin-top:6px;display:flex;justify-content:space-between;align-items:center}
+.leftbrand{font-weight:700}
+.rightcontact{font-size:13px}
+
+/* responsive */
+@media(max-width:900px){
+  main{grid-template-columns:1fr;gap:18px}
+  .preview-area{order:-1}
+}
